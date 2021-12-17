@@ -13,13 +13,14 @@
 
     $name = 'Mattia';
     $text = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores eum nemo corporis odio nulla quisquam provident ex. Nobis beatae aperiam saepe dolorum, laborum non ea labore rem sunt eaque repellendus.';
+    $censure = $_GET['censure'];
     ?>
     <h1>
         Hello <?php echo $name ?>
     </h1>
     <p>
         <?php 
-            echo $text . ' Lunghezza ' . strlen($text);
+            echo str_replace($censure, '***', $text) . ' Lunghezza ' . strlen($text);
         ?>
     </p>
 </body>
