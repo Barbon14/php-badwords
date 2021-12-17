@@ -19,8 +19,7 @@
     </h1>
     <p>
         <?php 
-            echo $text;
-            echo ' Lunghezza '. strlen($text);
+            echo $text . ' Lunghezza ' . strlen($text);
         ?>
     </p>
 </body>
